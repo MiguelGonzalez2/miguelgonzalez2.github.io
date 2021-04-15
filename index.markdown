@@ -5,4 +5,4 @@
 layout: home
 ---
 
-Miguel González personal site. Work in progress.
+Welcome to my personal website. You can find about my projects in the [projects]({% link projects.markdown %}) section, and learn more about me in the [about]({% link about.markdown %}) section. Below these lines you will find my blog posts.
