@@ -1,0 +1,26 @@
+.toc {
+    background-color: lightgray;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    width: auto;
+}
+
+.toc ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.toc a {
+    color: darkblue; /* Para que el color lo decida el div padre*/
+    text-decoration: none;
+    transition-duration: 250ms;
+}
+
+.toc a:hover {
+    color: blue; /* Para que el color lo decida el div padre*/
+    text-decoration: none;
+    transition-duration: 250ms;
+}

@@ -10,3 +10,4 @@ In this website, I will publish some of my personal projects in the [projects]({
 
 You can find more about me in the [about]({% link about.markdown %}) page.
 
+[Back to the main page.]({% link index.markdown %})
