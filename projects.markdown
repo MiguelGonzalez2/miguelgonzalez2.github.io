@@ -34,9 +34,9 @@ These documents **are NOT**:
 
 Find the documents here:
 
-- **Real Analysis I (_Cálculo I_)**: [download pdf]({{site.url}}/static/apuntex-revisados/primero/cali.pdf)
-- **Set and number theory (_Conjuntos y Números_)**: [download pdf]({{site.url}}/static/apuntex-revisados/primero/cn.pdf)
-- **Linear Algebra (_Álgebra Lineal_)**: [download pdf]({{site.url}}/static/apuntex-revisados/primero/al.pdf)
+- **Real Analysis I (_Cálculo I_)**: [download pdf]({% link static/apuntex-revisados/primero/cali.pdf %})
+- **Set and number theory (_Conjuntos y Números_)**: [[download pdf]({% link static/apuntex-revisados/primero/cn.pdf %})
+- **Linear Algebra (_Álgebra Lineal_)**: [download pdf]({% link static/apuntex-revisados/primero/al.pdf %})
 - **Real Analysis II (multivariable) (_Cálculo II_)**: _pending revision_
 - **Algebra and euclidean geometry (_Álgebra Lineal y Geometría_)**: _pending revision_
 - **Numerical analysis (_Cálculo numérico_)**: _pending revision_
