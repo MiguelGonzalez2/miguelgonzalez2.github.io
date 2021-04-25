@@ -24,3 +24,44 @@
     text-decoration: none;
     transition-duration: 250ms;
 }
+
+.exercisetoggle{
+    background-color: lightgray;
+    width: auto;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    user-select: none;
+    text-align: justify;
+}
+
+.exercisetoggledummy{
+    background-color: lightgray;
+    width: auto;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    user-select: none;
+    text-align: justify;
+}
+
+.exercisesolution{
+    background-color: lightblue;
+    width: auto;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 5px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
