@@ -81,6 +81,57 @@ The perpendicular to $$l$$ through $$P$$ is actually very easy. We just need the
 
 If $$P$$ doesn't lie on the perpendicular bisector, then just use the previously explained parallel procedure to shift it!
 
+### The field of constructible numbers
+
+So far, we've been talking about constructible _points_, which were those that could be obtained from the origin and the unit point. However, thanks to the results derived in the previous section, it doesn't really matter if we consider _points_ or _numbers_. For example if you can reach point $$P = (x,y)$$, then you can obtain $$x$$ itself (that is, the point $$(x,0)$$) by tracing a parallel to the $$Y$$ axis through $$P$$ and letting it intersect the $$X$$ axis.
+
+Similarly, given points $$x$$ and $$y$$ which are constructible (again, this means one can obtain the points $$(x,0)$$ and $$(y,0)$$), you can trace a circumference with radius $$y$$ centered at the origin and let it intersect the $$Y$$ axis to get $$(0,y)$$. With the appropriate usage of parallel lines, the point $$(x,y)$$ is then retrieved:
+
+![Coordinate_lifting]({{site.base_url}} {% link images/posts/squaring-the-circle/lifting.png %}) 
+{: style="width: 400px; margin-left: auto; margin-right: auto; display:block;"}
+
+But wait! So far we had just constructed points in the $$X$$ axis. It would be illegal to use the $$Y$$ axis like we just did, since we didn't get any point from said axis in the first place. Can you explain a way of constructing such a point, so that we can use it?
+{: class="exercisetoggle"}
+Since we already have the horizontal axis, and we know taking perpendiculars can be done, simply trace a perpendicular to the $$X$$ axis through the origin. There are, of course, many other valid explanations.
+{: class="exercisesolution"}
+
+This means that we can make our life easier by establishing the following definition: a number is **constructible** if and only if it's any component of a constructible point (starting from $$(0,0)$$ and $$(1,0)$$). We'll denote this set of numbers as $$\mathcal C$$. Constructible numbers and points are essentially the same, but it will be easier to work in one dimension. Note that $$\mathcal C \subset \mathbb R$$, although we don't know yet whether they are the same.
+
+In order to use the powerful tools of algebra with our problem, we're going to show some key properties of $$\mathcal C$$. This set, along with the usual sum ($$+$$) and product ($$\cdot$$) operations, has a **field** structure. This means that certain operations are preserved. Let's take a look at them with visual proofs.
+
+Firstly, there are neutral elements for both operations, that is, elements such that, when summed or multiplied with another number, leave said number unmodified. They are, of course $$0$$ (for the sum) and $$1$$ (for the product), and them being constructible is the very first thing we established.
+
+Secondly, the sum of constructible numbers is again constructible, and the same goes for the difference:
+
+![sum_and_difference]({{site.base_url}} {% link images/posts/squaring-the-circle/sumdiff.png %}) 
+{: style="width: 400px; margin-left: auto; margin-right: auto; display:block;"}
+
+Same goes for the product. Here we show the construction, which cleverly uses [Thales's Theorem](https://en.wikipedia.org/wiki/Thales%27s_theorem):
+
+![product]({{site.base_url}} {% link images/posts/squaring-the-circle/prod.png %}) 
+{: style="width: 400px; margin-left: auto; margin-right: auto; display:block;"}
+
+This same construction with a minor modification yields the multiplicative inverse:
+
+![inverse]({{site.base_url}} {% link images/posts/squaring-the-circle/inverse.png %}) 
+{: style="width: 400px; margin-left: auto; margin-right: auto; display:block;"}
+
+With all these properties, as well as _associativity_ and _distributivity_, which are automatically inherited from operations in $$\mathbb R$$, we can conclude that $$\mathcal C$$ is a [field](https://en.wikipedia.org/wiki/Field_(mathematics)), as desired.
+
+If you pay close attention to the last two figures, you'll see that in order to apply Thales's Theorem, we need the involved numbers to be positive ($$a,b > 0$$). Can you explain why multiplication and inverse work in general, even if the values are not both positive? You should be able to do this without any crazy construction, only with everything discussed so far.
+{: class="exercisetoggle"}
+Suppose, for example, that $$a < 0$$ and $$b > 0$$. Then, using Thales's Theorem we can get $$(-a)b$$, but this is the same as $$-ab$$. Then, you can do $$0 - (-ab) = ab$$ to finish it off, since the case of the difference has already been proven in general. The case where both are negative is even easier, and the same goes for the inverse. Finally, if any of the numbers is $$0$$, the product is $$0$$ which is in $$\mathcal C$$.
+{: class="exercisesolution"}
+
+In previous sections we saw that every integer could be constructed, that is, $$\mathbb Z \subset \mathcal C$$. It turns out that the smallest field that contains the integers is the rationals (can you see why with the properties discussed?), which automatically gives $$\mathbb Q \subset \mathcal C$$. In other words, any point of _rational_ coordinates can be constructed. That's a lot!
+
+Let's wrap up this section with one last crucial property of $$\mathcal C$$. Given the _compass rule_, it makes sense that if a point $$(a,b)$$ can be constructed, then so can its distance to the origin (the number $$\sqrt{a^2+b^2}$$). The way to do this is the obvious one (with a circumference centered at $$(0,0)$$ and intersecting the $$X$$ axis). This allows non-rational numbers to be constructible: for example, $$\sqrt{2}$$ is the distance of $$(1,1)$$ to the origin. It turns out that **the square root of any positive, constructible number is also constructible**, and the classical construction for this is the following:
+
+![square_root]({{site.base_url}} {% link images/posts/squaring-the-circle/sqrt.png %}) 
+{: style="width: 400px; margin-left: auto; margin-right: auto; display:block;"}
+
+Equipped with the knowledge that $$\mathcal C$$ is a field where taking the square root is preserved, we are ready to prove that squaring the circle is impossible!
+
 [Back to the main page.]({% link index.markdown %})
 
 
