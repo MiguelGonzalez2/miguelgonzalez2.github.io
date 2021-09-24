@@ -192,12 +192,12 @@ The key thing we've checked is that **if the new element wasn't already in $$\ma
 <a name="towering-extensions"></a>
 ### Towering extensions
 
-Let's imagine how the previous section fits into our construction process. We first obtained that $$\mathbb Q$$ was constructible. Now we further construct another point $$P_0 = (x_0,y_0)$$, which gives us an extension $$\mathbb Q \subset \mathbb Q(x_0,y_0)$$ which is algebraic, so that $$x_0$$ and $$y_0$$ both satisfy a polynomial with coefficients in $$\mathbb Q$$ (whose degree is at most $$2$$). Now, from these points, we further construct $$P_1 = (x_1,y_1)$$. The previous analysis tells us that $$x_1$$ and $$y_1$$ will satisfy a polynomial with coefficients in $$\mathbb Q(x_0,y_0)$$. In other words, we have the following _extension tower_: $$\mathbb Q \subset \mathbb Q(x_0,y_0) \subset Q(x_0,y_0,x_1,y_1)$$, where any pair of consecutive extensions is algebraic. For these situations, there is a key result from field theory:
+Let's imagine how the previous section fits into our construction process. We first obtained that $$\mathbb Q$$ was constructible. Now we further construct another point $$P_0 = (x_0,y_0)$$, which gives us an extension $$\mathbb Q \subset \mathbb Q(x_0,y_0)$$ which is algebraic, so that $$x_0$$ and $$y_0$$ both satisfy a polynomial with coefficients in $$\mathbb Q$$ (whose degree is at most $$2$$). Now, from these points, we further construct $$P_1 = (x_1,y_1)$$. The previous analysis tells us that $$x_1$$ and $$y_1$$ will satisfy a polynomial with coefficients in $$\mathbb Q(x_0,y_0)$$. In other words, we have the following _extension tower_: $$\mathbb Q \subset \mathbb Q(x_0,y_0) \subset \mathbb Q(x_0,y_0,x_1,y_1)$$, where any pair of consecutive extensions is algebraic. For these situations, there is a key result from field theory:
 
 **Theorem 1.** If $$K \subset L \subset M$$ is a tower of field extensions, where every two consecutive extensions are algebraic, then $$K \subset M$$ is also algebraic. In other words, if elements in $$L$$ satisfy polynomial equations with coefficients in $$K$$, and elements in $$M$$ satisfy polynomial equations with coefficients in $$L$$, then elements in $$M$$ will satisfy a polynomial equation with coefficients in $$K$$.
 {: class="emphasizebox"}
 
-The proof is not very hard, and you can attempt to play around with the theorem and reach it for yourself. If you think about it, we're now very close to solving the problem! From everything we've seen so far, it follows that:
+The [proof](https://proofwiki.org/wiki/Transitivity_of_Algebraic_Extensions) needs a decent amount of theory that doesn't fit here.
 
 **Theorem 2.** Any constructible number $$c \in \mathcal C$$ satisfies a polynomial equation with coefficients in $$\mathbb Q$$.
 {: class="emphasizebox"}
@@ -223,12 +223,7 @@ The fact that $$\pi$$ is transcendental is not easy to show, and can be deduced 
 
 Congratulations for making it here! This was quite a dense post, but I hope you could learn something along the way! There are other marvelous results that can be proven using all this theory, which closely relates to [Galois Theory](https://en.wikipedia.org/wiki/Galois_theory). Here I leave you some more questions that will allow you to further explore this topic if you want to.
 
-Observe **Theorem 1** carefully. If you've managed to prove it, you will realize a relationship between the degrees of the polynomials involved. If $$l \in L$$ satisfies a polynomial of degree $$d_1$$ with coefficients in $$K$$, and $$m \in M$$ satisfies a polynomial of degree $$d_2$$ with coefficients in $$L$$, what is the degree of the polynomial satisfied by $$m$$ with coefficients in $$K$$?
-{: class="exercisetoggle"}
-The degree turns out to be $$d_1 \cdot d_2$$.
-{: class="exercisesolution"}
-
-Using your previous observation, given a constructible number $$c \in \mathcal C$$, what can you say about the degree of the polynomial in $$\mathbb Q$$ it satisfies?
+Observe **Theorem 1** carefully. There's a relationship between the degrees of the polynomials involved. If $$l \in L$$ satisfies a polynomial of degree $$d_1$$ with coefficients in $$K$$, and $$m \in M$$ satisfies a polynomial of degree $$d_2$$ with coefficients in $$L$$, then the degree of the polynomial satisfied by $$m$$ with coefficients in $$K$$ turns out to be $$d_1 \cdot d_2$$. Using this, given a constructible number $$c \in \mathcal C$$, what can you say about the degree of the polynomial in $$\mathbb Q$$ it satisfies?
 {: class="exercisetoggle"}
 Since, from every field to the next one, a polynomial of degree $$1$$ or $$2$$ was involved, using the previous question we deduce that the degree has to be **a power of $$2$$**. For example, $$2$$ or $$4$$ would be obtained with this procedure, but not $$3$$.
 {: class="exercisesolution"}
@@ -238,7 +233,7 @@ Is it possible that $$c \in \mathcal C$$ satisfies a polynomial with a different
 Yes, because if $$P(c) = 0$$, then $$c^kP(c) = 0$$ for any $$k \in \mathbb N$$, so you could obtain any degree which is greater than the one obtained in the previous question via considering the polynomial $$X^kP(X)$$.
 {: class="exercisesolution"}
 
-**Theorem 4.** If we restrict every polynomial discussed so far to be **irreducible**, then the answer to the previous question is no. In other words, if $$c \in \mathcal C$$ is constructible, and $$P(X)$$ is an irreducible polynomial with coefficients in $$\mathbb Q$$ so that $$P(c) = 0$$, its degree is necessarily the one obtained in the second question of this section.
+**Theorem 4.** If we restrict every polynomial discussed so far to be **irreducible**, then the answer to the previous question is no. In other words, if $$c \in \mathcal C$$ is constructible, and $$P(X)$$ is an irreducible polynomial with coefficients in $$\mathbb Q$$ so that $$P(c) = 0$$, its degree is necessarily the one obtained in the first question of this section.
 {: class="emphasizebox"}
 
 **(Hard question)** Use these facts to show that **it is impossible to duplicate a cube** with ruler and compass. That is, given a cube with two of its adjacent vertices at $$(0,0)$$ and $$(1,0)$$, it is impossible to construct (the vertices of) a cube with double the volume (that is, volume $$V = 2$$). Use the results from this section, as well as the proof for the circle squaring impossibility.
