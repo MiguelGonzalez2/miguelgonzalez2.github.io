@@ -22,7 +22,7 @@ These are my revised class notes (in Spanish) from lectures I attended as part o
 
 These documents **are**:
 
-- A direct an ordered collection of the most importat definitions and results from the subject in question, at undergraduate level.
+- A direct an ordered collection of the most important definitions and results from the subject in question, at undergraduate level.
 - A collection of full proofs of said results (except in the most basic cases).
 - A _guide_ to quickly review previously acquired ideas, or to check specific aspects that might have not been fully understood at first.
 
