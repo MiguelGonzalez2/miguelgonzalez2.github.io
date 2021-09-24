@@ -173,7 +173,19 @@ What relation do we obtain if $$b = 0$$ (similarly for $$a=0$$)?
 In this case, simply looking at the line yields $$x_0 = \frac{c}{a}$$ so $$x_0 \in \mathcal B$$.
 {: class="exercisesolution"}
 
-**Third case.** As you might have already guessed, the third case involves intersecting two circles $$(x-a)^2+(y-b)^2 = c^2$$ and $$(x-d)^2+(y-e)^2 = f^2$$, with $$a,b,c,d,e,f \in \mathcal B$$. One can subtract the two equations to obtain a new equation $$2(a-d)x + 2(b-e)y = f^2-c^2+a^2+b^2-d^2-e^2$$, which is that of a line, and intersecting this line with any of the two circles gives the point $$P$$, so we're back to case $$2$$.
+**Third case.** As you might have already guessed, the third case involves intersecting two circles: 
+
+$$(x-a)^2+(y-b)^2 = c^2$$ 
+
+and 
+
+$$(x-d)^2+(y-e)^2 = f^2,$$
+
+with $$a,b,c,d,e,f \in \mathcal B$$. One can subtract the two equations to obtain a new equation 
+
+$$2(a-d)x + 2(b-e)y = f^2-c^2+a^2+b^2-d^2-e^2,$$ 
+
+which is that of a line, and intersecting this line with any of the two circles gives the point $$P$$, so we're back to case $$2$$.
 
 The key thing we've checked is that **if the new element wasn't already in $$\mathcal B$$, then it satisfies a degree $$2$$ polynomial with coefficients in $$\mathcal B$$**. In mathematical terms, this means that the new element **is algebraic over the field $$\mathcal B$$**. If we denote by $$\mathcal B (x_0,y_0)$$ the new field that arises upon adding the new points (and building a field as explained before, by adding, subtracting, multiplying and inverting the elements), this means that $$\mathcal B (x_0,y_0)$$ is an **algebraic extension** of the field $$\mathcal B$$ (because it was obtained by adding algebraic elements). A result from field theory establishes that every element of an algebraic field extension is algebraic (not only the ones we _manually added_), but we won't need this for our argument.
 
