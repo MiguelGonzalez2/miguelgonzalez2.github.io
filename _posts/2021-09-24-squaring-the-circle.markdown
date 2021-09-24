@@ -6,6 +6,14 @@ date: 2021-09-24 00:00:00
 ---
 
 {::options parse_block_html="true" /}
+
+<div class="softbox">
+This post is based on an undergraduate project which was done together with my colleagues:
+- Guillermo García ([Linkedin](https://www.linkedin.com/in/guillermogarciacobo/))
+- Antonio García ([Linkedin](https://www.linkedin.com/in/antonio-garcia-naranjo-46bb70202/))
+- Álvaro Zaera ([Linkedin](https://www.linkedin.com/in/%C3%A1lvaro-zaera-de-la-fuente-3ba121208/))
+</div>
+
 <div class="toc">
 **Table of contents:**
 - [The problem](#the-problem)
@@ -18,7 +26,6 @@ date: 2021-09-24 00:00:00
 - [The final proof](#final-proof)
 - [Parting words](#parting-words)
 </div>
-<br/>
 
 Mathematics is an active discipline! Whenever you see a question written in this style, I encourage that you attempt to solve it! Clicking the question will reveal the answer.
 {: class="exercisetoggledummy" style="margin-bottom:30px;"}
@@ -223,7 +230,7 @@ The fact that $$\pi$$ is transcendental is not easy to show, and can be deduced 
 
 Congratulations for making it here! This was quite a dense post, but I hope you could learn something along the way! There are other marvelous results that can be proven using all this theory, which closely relates to [Galois Theory](https://en.wikipedia.org/wiki/Galois_theory). Here I leave you some more questions that will allow you to further explore this topic if you want to.
 
-Observe **Theorem 1** carefully. There's a relationship between the degrees of the polynomials involved. If $$l \in L$$ satisfies a polynomial of degree $$d_1$$ with coefficients in $$K$$, and $$m \in M$$ satisfies a polynomial of degree $$d_2$$ with coefficients in $$L$$, then the degree of the polynomial satisfied by $$m$$ with coefficients in $$K$$ turns out to be $$d_1 \cdot d_2$$. Using this, given a constructible number $$c \in \mathcal C$$, what can you say about the degree of the polynomial in $$\mathbb Q$$ it satisfies?
+Observe **Theorem 1** carefully. There's a relationship between the degrees of the polynomials involved. Suppose we have a tower of the kind $$\mathbb Q \subset \mathbb Q(x_0) \subset \mathbb Q(x_0, x_1)$$, as before. If $$x_0$$ satisfies a polynomial of degree $$d_1$$ with coefficients in $$\mathbb Q$$, and $$x_1$$ satisfies a polynomial of degree $$d_2$$ with coefficients in $$\mathbb Q(x_0)$$, then the degree of the polynomial satisfied by $$x_1$$ with coefficients in $$\mathbb Q$$ (as per Theorem 1) turns out to be $$d_1 \cdot d_2$$. Using this, given a constructible number $$c \in \mathcal C$$, what can you say about the degree of the polynomial in $$\mathbb Q$$ it satisfies?
 {: class="exercisetoggle"}
 Since, from every field to the next one, a polynomial of degree $$1$$ or $$2$$ was involved, using the previous question we deduce that the degree has to be **a power of $$2$$**. For example, $$2$$ or $$4$$ would be obtained with this procedure, but not $$3$$.
 {: class="exercisesolution"}
