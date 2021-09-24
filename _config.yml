@@ -23,7 +23,7 @@ email: mgonzalez.contacto@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is my personal website. You can find about my projects in the projects section, and learn more about me in the about section.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "miguelgg.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://miguelgg.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 2gonzalezmiguel
 github_username:  miguelgonzalez2
 linkedin_username: miguelgonzalezgonzalez
