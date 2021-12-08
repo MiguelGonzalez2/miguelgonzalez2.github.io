@@ -54,7 +54,7 @@ Encontrar una ruta con esas características es muy fácil: como cada vértice s
 
 El matemático rápidamente se da cuenta de que, visitando Ciudad Gauss y Numerasia antes que el Reino de Möbius, en lugar de después, el vendedor ambulante tardaría $$5+7+1+11 = 24$$, es decir, menos. El objetivo está claro. El matemático llama **coste** a la suma de los tiempos de cada arista, y enuncia:
 
-**Problema del viajante.** Dado un grafo completo, encontrar un circuito Hamiltoniano de coste mínimo.
+**Problema del viajante.** Dado un grafo completo, encontrar un ciclo Hamiltoniano de coste mínimo.
 {: class="emphasizebox"}
 
 Quizás en el grafo de ejemplo sea fácil de obtener, pero el matemático ve imposible atacar el problema para todas las ciudades de la península. ¡Hay muchísimas combinaciones! Al matemático, sin embargo, se le ocurre una manera inteligente de encontrar un trayecto bastante bueno. 
@@ -83,7 +83,7 @@ El matemático está convencido de que estaría bien utilizar esas aristas, aunq
 ![Grafo arbol recubridor]({{site.base_url}} {% link images/posts/el-matematico-y-el-vendedor-ambulante/mst.png %})
 {: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
 
-El matemático no sabe muy bien cómo encontrar un ciclo Hamiltoniano, pero recuerda de su época de estudiante un [teorema](https://es.wikipedia.org/wiki/Ciclo_euleriano) que le permite encontrar un ciclo en el grafo que pase por todas las **aristas** una única vez (aunque podría pasar varias veces por un vértice). Para ello, necesita que el número de aristas conectadas con cada vértice sea par, así que añade algunas más para que así sea:
+El matemático no sabe muy bien cómo encontrar un ciclo Hamiltoniano añadiendo pocas aristas, pero recuerda de su época de estudiante un [teorema](https://es.wikipedia.org/wiki/Ciclo_euleriano) que le permite encontrar un ciclo en el grafo que pase por todas las **aristas** una única vez (aunque podría pasar varias veces por un vértice). Para ello, necesita que el número de aristas conectadas con cada vértice sea par, así que añade algunas más para que así sea:
 
 ![Grafo apareamiento arbol recubridor]({{site.base_url}} {% link images/posts/el-matematico-y-el-vendedor-ambulante/matching.png %})
 {: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
@@ -128,7 +128,7 @@ Primero, va a poner dos aristas entre cada par de vértices, una en cada sentido
 
 ¡Qué complicado! Ahora tiene muchas más aristas con las que trabajar, no sabe si el procedimiento que siguió antes va a funcionar y cada arista solo puede recorrerse en el sentido de la flecha, y no al revés.
 
-**Problema del viajante asimétrico.** Dado un grafo completo dirigido, encontrar un circuito Hamiltoniano de coste mínimo.
+**Problema del viajante asimétrico.** Dado un grafo completo dirigido, encontrar un ciclo Hamiltoniano de coste mínimo.
 {: class="emphasizebox"}
 
 > Matemático.- No tiene ningún sentido que vuelva a partir de cero. Ya he resuelto un problema parecido en el pasado, cuando el grafo no era dirigido. Si consigo convertir este grafo en uno que no sea dirigido, pero que represente el mismo problema, habré terminado. Pero, ¿cómo?
@@ -142,7 +142,7 @@ Lo que quiere decir el matemático, es que va a convertir la ciudad de _Euleria_
 ![arista asimétrica]({{site.base_url}} {% link images/posts/el-matematico-y-el-vendedor-ambulante/asym2.png %})
 {: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
 
-El circuito óptimo es, evidentemente, _Euleria - Numerasia - Euleria_. Si ponemos en práctica la idea del matemático, podemos convertirlo en este grafo que representa el mismo problema, pero ahora no es dirigido:
+El ciclo óptimo es, evidentemente, _Euleria - Numerasia - Euleria_. Si ponemos en práctica la idea del matemático, podemos convertirlo en este grafo que representa el mismo problema, pero ahora no es dirigido:
 
 ![simetrizacion]({{site.base_url}} {% link images/posts/el-matematico-y-el-vendedor-ambulante/sym.png %})
 {: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
@@ -174,7 +174,7 @@ Este procedimiento aplicado a cada par de nodos permite transformar el problema 
 
 Una vez más, es hora de codificar este problema mediante un grafo. Ahora que hay tres empleados, una solución ingenua sería coger el trayecto que ya conocíamos, para una persona, y dividirlo entre tres. Pero esto no es posible: los empleados del vendedor ambulante viven en la misma ciudad que él. Es decir, los tres deben comenzar y acabar en la misma ciudad. Por supuesto, tampoco tiene sentido que dos empleados pasen por la misma ciudad. Como ya sabemos del Acto 2, podemos resolver el problema en un grafo no dirigido, sin preocuparnos por los distintos sentidos.
 
-**Problema del viajante múltiple.** Dado un grafo completo, encontrar $$N$$ (en nuestro caso, $$3$$) circuitos, que comiencen en el mismo vértice de origen, y visiten todas las demás ciudades una única vez entre todos. La suma de los costes de los tres circuitos debe ser mínima.
+**Problema del viajante múltiple.** Dado un grafo completo, encontrar $$N$$ (en nuestro caso, $$3$$) ciclos, que comiencen en el mismo vértice de origen, y visiten todas las demás ciudades una única vez entre todos. La suma de los costes de los tres ciclos debe ser mínima.
 {: class="emphasizebox"}
 
 El matemático ya se está quedando sin ideas. 
@@ -239,7 +239,7 @@ Ha salido _Euleria - Numerasia - Euleria2 - Ciudad Gauss - Euleria3 - Hamiltonia
 
 Como es habitual, el matemático tiene que modificar el problema para que se ajuste a las necesidades del vendedor. Es fácil hacerlo mediante colores. El matemático asigna a cada empleado un color. Después, cada vértice es coloreado con el color del empleado que lo prefiere, si es que hay alguno. Por los vértices coloreados deberá pasar el empleado correspondiente. El problema se convierte en:
 
-**Problema del viajante coloreado.** Dado un grafo completo, donde cada vértice puede (o no) estar coloreado con uno de $$N$$ colores distintos (en nuestro caso, $$3$$), encontrar $$N$$ circuitos (en nuestro caso, $$3$$), que comiencen en el mismo vértice de origen, no coloreado, y visiten todas las demás ciudades una única vez entre todos. La suma de los costes de los tres circuitos debe ser mínima. Por los vértices coloreados solo podrá pasar el empleado del mismo color. Por los vértices sin colorear, podrá pasar cualquier empleado.
+**Problema del viajante coloreado.** Dado un grafo completo, donde cada vértice puede (o no) estar coloreado con uno de $$N$$ colores distintos (en nuestro caso, $$3$$), encontrar $$N$$ ciclos (en nuestro caso, $$3$$), que comiencen en el mismo vértice de origen, no coloreado, y visiten todas las demás ciudades una única vez entre todos. La suma de los costes de los tres ciclos debe ser mínima. Por los vértices coloreados solo podrá pasar el empleado del mismo color. Por los vértices sin colorear, podrá pasar cualquier empleado.
 {: class="emphasizebox"}
 
 > Matemático.- Es muy difícil resolver este problema. Se me ocurre una manera de hacerlo cuando todos los vértices están coloreados con alguno de los colores. Os la contaré a continuación.
