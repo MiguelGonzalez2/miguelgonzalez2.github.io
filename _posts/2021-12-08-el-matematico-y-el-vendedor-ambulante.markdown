@@ -172,7 +172,7 @@ Este procedimiento aplicado a cada par de nodos permite transformar el problema 
 >
 > Matemático.- Veré lo que puedo hacer.
 
-Una vez más, es hora de codificar este problema mediante un grafo. Ahora que hay tres empleados, una solución ingenua sería coger el trayecto que ya conocíamos, para una persona, y dividirlo entre tres. Pero esto no es posible: los empleados del vendedor ambulante viven en la misma ciudad que él. Es decir, los tres deben comenzar y acabar en la misma ciudad. Por supuesto, tampoco tiene sentido que dos empleados pasen por la misma ciudad. Como ya sabemos del Acto 2, podemos resolver el problema en un grafo no dirigido, sin preocuparnos por los distintos sentidos.
+Una vez más, es hora de codificar este problema mediante un grafo. Ahora que hay tres empleados, una solución ingenua sería coger el trayecto que ya conocíamos, para una persona, y dividirlo entre tres. Pero esto no es posible: los empleados del vendedor ambulante viven en la misma ciudad que él. Es decir, los tres deben comenzar y acabar en la misma ciudad. Por supuesto, tampoco tiene sentido que dos empleados pasen por la misma ciudad. Como ya sabemos del Acto II, podemos resolver el problema en un grafo no dirigido, sin preocuparnos por los distintos sentidos.
 
 **Problema del viajante múltiple.** Dado un grafo completo, encontrar $$N$$ (en nuestro caso, $$3$$) ciclos, que comiencen en el mismo vértice de origen, y visiten todas las demás ciudades una única vez entre todos. La suma de los costes de los tres ciclos debe ser mínima.
 {: class="emphasizebox"}
