@@ -8,7 +8,7 @@ permalink: /about/
 {: style="width: 150px; margin-left: auto; margin-right: auto;"}
 <br/>
 
-Hi! My name is Miguel González and I'm currently studying a Double Degree in Mathematics and Computer Science at Universidad Autónoma de Madrid (Spain). I'm interested in pure mathematics topics such as abstract algebra, topology, and differential/algebraic geometry. My main hobbies are playing videogames and, as of recently, learning Japanese (一年ぐらい前に始めた！).
+Hi! My name is Miguel González and I'm currently studying a Double Degree in Mathematics and Computer Science at Universidad Autónoma de Madrid (Spain). I'm interested in pure mathematics topics such as abstract algebra, topology, and differential/algebraic geometry. My main hobbies are playing videogames and, as of recently, self-learning Japanese (一年ぐらい前に始めた！).
 
 I have also participated in several academic competitions, such as the [49th International Chemistry Olympiad](http://www.icho-official.org/results/results.php?id=49&year=2017), in which I got a bronze medal.
 
