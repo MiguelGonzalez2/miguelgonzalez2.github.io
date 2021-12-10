@@ -219,7 +219,7 @@ Ha salido _Euleria - Numerasia - Euleria2 - Ciudad Gauss - Euleria3 - Hamiltonia
 >
 > Matemático.- Bueno, pues dale a él la ruta que pasa por esa ciudad, ¿no crees?
 >
-> Vendedor ambulante.- Es que, verás... A mi también me gustaría pasar por esta otra ciudad...
+> Vendedor ambulante.- Es que, verás... A mí también me gustaría pasar por esta otra ciudad...
 >
 > (Señala otra ciudad)
 >
