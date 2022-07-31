@@ -18,7 +18,7 @@ Here you can find some of my personal projects.
 <a name="apuntex"></a>
 ### ApunTeX - Mathematics Course Notes (in Spanish)
 
-These are my revised class notes (in Spanish) from lectures I attended as part of my Degree in Mathematics. Before being published here, I revised them individually, adding a cover image, a summary page and short explanatory paragraphs where I felt they were needed.
+These are my revised class notes (in Spanish) from lectures I attended as part of my Degree in Mathematics at Universidad Autónoma de Madrid (UAM). Before being published here, I revised them individually, adding a cover image, a summary page and short explanatory paragraphs where I felt they were needed.
 
 These documents **are**:
 
@@ -37,20 +37,23 @@ Find the documents here:
 - **Real Analysis I (_Cálculo I_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/primero/cali.pdf %})
 - **Set and number theory (_Conjuntos y Números_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/primero/cn.pdf %})
 - **Linear Algebra (_Álgebra Lineal_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/primero/al.pdf %})
-- **Real Analysis II (multivariable) (_Cálculo II_)**: _pending revision_
-- **Algebra and euclidean geometry (_Álgebra Lineal y Geometría_)**: _pending revision_
-- **Numerical analysis (_Cálculo numérico_)**: _pending revision_
-- **Probability I (_Probabilidad I_)**: _pending revision_
-- **Algebraic Structures and Group Theory (_Estructuras Algebraicas_)**: _pending revision_
-- **Mathematical Analysis (_Análisis matemático_)**: _pending revision_
-- **Geometry of Curves and Surfaces (_Geometría de Curvas y Superficies_)**: _pending revision_
-- **Ordinary Differential Equations (_Ecuaciones diferenciales_)**: _pending revision_
-- **Topology (_Topología_)**: _pending revision_
-- **Galois Theory (_Teoría de Galois_)**: _pending revision_
-- **Integration and Measure Theory (_Teoría de la Integral y la Medida_)**: _pending revision_
-- **Mathematical Models (_Modelización_)**: _pending revision_
-- **Complex Analysis (_Variable Compleja I_)**: _pending revision_
-- **Differential Geometry (_Geometría Diferencial_)**: _pending revision_
+- **Real Analysis II (multivariable) (_Cálculo II_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/primero/calii.pdf %})
+- **Algebra and euclidean geometry (_Álgebra Lineal y Geometría_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/segundo/algeo.pdf %})
+- **Numerical analysis (_Cálculo numérico_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/segundo/cn.pdf %})
+- **Probability I (_Probabilidad I_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/segundo/P1.pdf %})
+- **Algebraic Structures and Group Theory (_Estructuras Algebraicas_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/tercero/ea.pdf %})
+- **Mathematical Analysis (_Análisis matemático_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/tercero/am.pdf %})
+- **Geometry of Curves and Surfaces (_Geometría de Curvas y Superficies_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/tercero/gcs.pdf %})
+- **Ordinary Differential Equations (_Ecuaciones diferenciales_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/tercero/edo.pdf %})
+- **Topology (_Topología_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/cuarto/top.pdf %})
+- **Galois Theory (_Teoría de Galois_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/cuarto/tg.pdf %})
+- **Integration and Measure Theory (_Teoría de la Integral y la Medida_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/cuarto/tim.pdf %})
+- **Mathematical Models (_Modelización_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/cuarto/mod.pdf %})
+- **Complex Analysis (_Variable Compleja I_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/cuarto/vc1.pdf %})
+- **Differential Geometry (_Geometría Diferencial_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/cuarto/gd.pdf %})
+- **Algebraic Number Theory (_Teoría Algebraica de Números_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/quinto/tan.pdf %})
+- **Commutative Algebra (_Álgebra Conmutativa_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/quinto/ac.pdf %})
+- **Geometry and Topology (_Geometría y Topología_)**: [download pdf]({{ site.baseurl }}{% link static/apuntex-revisados/quinto/gt.pdf %})
 
 Found any typos or improvements, or have any general feedback? Please let me know via [mail](mailto:mgonzalez.contacto@gmail.com).
 
