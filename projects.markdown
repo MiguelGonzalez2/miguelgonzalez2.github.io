@@ -57,7 +57,7 @@ Find the documents here:
 
 Found any typos or improvements, or have any general feedback? Please let me know via [mail](mailto:mgonzalez.contacto@gmail.com).
 
-These documents are completely free to download and use, and subject to a [creative commons license](https://creativecommons.org/licenses/by-nc-nd/4.0/). If you found them helpful, consider [donating via PayPal](https://www.paypal.com/paypalme/MiguelGonzalezG).
+These documents are completely free to download and use, and subject to a [creative commons license](https://creativecommons.org/licenses/by-nc-nd/4.0/). If you found them helpful, consider [donating via PayPal](https://www.paypal.com/paypalme/MiguelGonzalezG). You can also download the notes from [Wuolah](https://www.wuolah.com/perfil/MiguelG2).
 
 <a name="50m"></a>
 ### 50!Mania - A DDR-like rhythm game in Lua
