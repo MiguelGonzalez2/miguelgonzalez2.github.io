@@ -10,13 +10,29 @@ Here you can find some of my personal projects.
 {::options parse_block_html="true" /}
 <div class="toc">
 **Table of contents:**
+- [Publications](#publications)
 - [ApunTeX - Mathematics Course Notes (in Spanish)](#apuntex)
-- [50!mania - A DDR-like rhythm game in Lua](#50m)
 - [Other projects](#other)
 </div>
 
+<a name="publications"></a>
+## Publications
+
+Here you will find documents of several kinds that I have decided to make public.
+
+### Posters
+
+- **Very Stable $$U(p,q)$$-Higgs bundles.** _Institute of Science and Technology Austria (ISTA) Summer Internship 2022. Supervised by Tamás Hausel._ [download pdf]({{ site.baseurl }}{% link static/publications/ISTA2022.pdf %}) 
+
+### Theses
+
+- **Invariants for the action of $$\text{Gal}(\overline{ \mathbb Q }/ \mathbb Q)$$ on dessins d'enfants.** _Mathematics bachelor thesis. Supervised by Ernesto Girondo._ [download pdf]({{ site.baseurl }}{% link static/publications/TFGMates.pdf %}) 
+
+- **Reinforcement learning via dueling bandits.** _Computer Science bachelor thesis. Supervised by Pablo Castells._ [download pdf]({{ site.baseurl }}{% link static/publications/TFGInfo.pdf %})
+
+
 <a name="apuntex"></a>
-### ApunTeX - Mathematics Course Notes (in Spanish)
+## ApunTeX - Mathematics Course Notes (in Spanish)
 
 These are my revised class notes (in Spanish) from lectures I attended as part of my Degree in Mathematics at Universidad Autónoma de Madrid (UAM). Before being published here, I revised them individually, adding a cover image, a summary page and short explanatory paragraphs where I felt they were needed.
 
@@ -59,20 +75,10 @@ Found any typos or improvements, or have any general feedback? Please let me kno
 
 These documents are completely free to download and use, and subject to a [creative commons license](https://creativecommons.org/licenses/by-nc-nd/4.0/). If you found them helpful, consider [donating via PayPal](https://www.paypal.com/paypalme/MiguelGonzalezG). You can also download the notes from [Wuolah](https://www.wuolah.com/perfil/MiguelG2).
 
-<a name="50m"></a>
-### 50!Mania - A DDR-like rhythm game in Lua
-
-50!Mania is a rythm-based DDR-like game such as stepmania or osu!mania made with LOVE (2D), made by Miguel Gonzalez. The game audio was made by Kevin McLeod from incompetech as part of his royalty-free music library. Showcase video can be found [here](https://www.youtube.com/watch?v=POeyXxUaCU0). This was done as a final project for Harvard's CS50G Introduction to Game Development, which I took as a MOOC on edX.
-
-![showcase picture]({% link images/50mania.png %})
-{: style="margin-left: auto; margin-right: auto;"}
-
-You can find more about the project, including the code and instructions, at my [github](https://github.com/MiguelGonzalez2/50-mania).
-
 <a name="other"></a>
-### Other projects
+## Other projects
 
-Some of my other minor projects, such as a web server written in C or an artificial intelligence engine that wins at Othello, can be found at my my [github](https://github.com/MiguelGonzalez2).
+Some of my other minor projects can be found at my my [github](https://github.com/MiguelGonzalez2).
 
 <br/>
 [Back to top](#top)
