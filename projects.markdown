@@ -22,7 +22,7 @@ Here you will find documents of several kinds that I have decided to make public
 
 ### Preprints
 
-- **Hitchin map on even very stable upward flows** _(With Tamás Hausel)_ [arXiv link](https://arxiv.org/abs/2303.01404)
+- **Hitchin map on even very stable upward flows.** _(With Tamás Hausel)_ [arXiv link](https://arxiv.org/abs/2303.01404)
 
 ### Posters
 
