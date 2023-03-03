@@ -20,6 +20,10 @@ Here you can find some of my personal projects.
 
 Here you will find documents of several kinds that I have decided to make public.
 
+### Preprints
+
+- **Hitchin map on even very stable upward flows** _(With Tamás Hausel)_ [arXiv link](https://arxiv.org/abs/2303.01404)
+
 ### Posters
 
 - **Very Stable $$U(p,q)$$-Higgs bundles.** _Institute of Science and Technology Austria (ISTA) Summer Internship 2022. Supervised by Tamás Hausel._ [download pdf]({{ site.baseurl }}{% link static/publications/ISTA2022.pdf %}) 
