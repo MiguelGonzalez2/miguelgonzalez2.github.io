@@ -253,6 +253,6 @@ If you got it, congrats! [Contact me](mailto:mgonzalez.contacto@gmail.com) if yo
 If you got it, congrats! [Contact me](mailto:mgonzalez.contacto@gmail.com) if you want to discuss this question.
 {: class="exercisesolution"}
 
-[Back to the main page.]({% link index.markdown %})
+[Back to the posts page.]({% link posts.markdown %})
 
 

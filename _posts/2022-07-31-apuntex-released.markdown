@@ -9,6 +9,6 @@ I write this short post just to let you know that all my class notes from the un
 
 Escribo este pequeño post para anunciar que he publicado todos mis apuntes del grado en matemáticas, escritos en LaTeX, en mi [sección de proyectos]({% link projects.markdown %}). Espero que puedan ser de utilidad para alguien!
 
-[Volver a la página principal.]({% link index.markdown %})
+[Volver a la página de posts.]({% link posts.markdown %})
 
 

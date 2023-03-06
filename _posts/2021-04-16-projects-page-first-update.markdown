@@ -25,6 +25,6 @@ If you are studying mathematics at a Spanish college, or might be interested in 
 
 As soon as I have some spare time to keep reviewing the remaining documents, I will publish them to the same [projects]({% link projects.markdown %}) page.
 
-[Back to the main page.]({% link index.markdown %})
+[Back to the posts page.]({% link posts.markdown %})
 
 

@@ -5,4 +5,6 @@
 layout: home
 ---
 
-Welcome to my personal website. You can find about my projects in the [projects]({% link projects.markdown %}) section, and learn more about me in the [about]({% link about.markdown %}) section. Below these lines you will find my blog posts.
+Welcome to my personal website. You can find about my projects below these lines, learn more about me in the [about]({% link about.markdown %}) section or read some of my blog posts in the [posts]({% link posts.markdown %}) section. Below these lines you will find my blog posts.
+
+{% include projects_content.markdown %}

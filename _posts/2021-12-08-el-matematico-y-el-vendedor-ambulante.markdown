@@ -285,6 +285,6 @@ Ahora, el problema es fácil, puesto que se obtienen tres grafos distintos, y se
 5. [Grafo inicial de la Península Ibérica.](https://fylux.github.io/2017/07/05/Sparse_TSP/)
 6. [Editor interactivo de grafos](https://graphonline.ru/en/#)
 
-[Volver a la página principal.]({% link index.markdown %})
+[Volver a la página de posts.]({% link posts.markdown %})
 
 
