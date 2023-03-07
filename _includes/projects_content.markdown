@@ -28,7 +28,7 @@ Here you will find some of my published documents of several kinds.
 
 ### Talks
 
-- **The Hitchin Fibration and Spectral Curves.** _Hitchin-Ngô Lab Workshop on the Hitchin Fibration, Langlands duality and mirror symmetry, Instituto de Ciencias Matemáticas (ICMAT), February 2022._ [download talk notes]({{ site.baseurl }}{% link static/publications/hitchin_spectral_talk.pdf %}) 
+- **The Hitchin Fibration and Spectral Curves.** _Hitchin-Ngô Lab Working Group on the Hitchin Fibration, Langlands duality and mirror symmetry, Instituto de Ciencias Matemáticas (ICMAT), February 2022._ [download talk notes]({{ site.baseurl }}{% link static/publications/hitchin_spectral_talk.pdf %}) 
 
 ### Theses
 
