@@ -32,6 +32,8 @@ Here you will find some of my published documents of several kinds.
 
 ### Theses
 
+- **Cyclic Higgs bundles and Vinberg theory.** _Mathematics master's thesis. Supervised by Oscar García-Prada._ [download pdf]({{ site.baseurl }}{% link static/publications/TFM.pdf %})
+
 - **Invariants for the action of $$\text{Gal}(\overline{ \mathbb Q }/ \mathbb Q)$$ on dessins d'enfants.** _Mathematics bachelor thesis. Supervised by Ernesto Girondo._ [download pdf]({{ site.baseurl }}{% link static/publications/TFGMates.pdf %}) 
 
 - **Reinforcement learning via dueling bandits.** _Computer Science bachelor thesis. Supervised by Pablo Castells._ [download pdf]({{ site.baseurl }}{% link static/publications/TFGInfo.pdf %})
