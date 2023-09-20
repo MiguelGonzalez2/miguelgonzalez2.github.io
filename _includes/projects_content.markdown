@@ -81,7 +81,7 @@ Find the documents here:
 
 Found any typos or improvements, or have any general feedback? Please let me know via [mail](mailto:mgonzalez.contacto@gmail.com).
 
-These documents are completely free to download and use, and subject to a [creative commons license](https://creativecommons.org/licenses/by-nc-nd/4.0/). If you found them helpful, consider [donating via PayPal](https://www.paypal.com/paypalme/MiguelGonzalezG). You can also download the notes from [Wuolah](https://www.wuolah.com/perfil/MiguelG2).
+These documents are completely free to download and use, and subject to a [creative commons license](https://creativecommons.org/licenses/by-nc-nd/4.0/). If you found them helpful, consider [donating via PayPal](https://www.paypal.com/paypalme/MiguelGonzalezG).
 
 <a name="other"></a>
 ## Other projects
