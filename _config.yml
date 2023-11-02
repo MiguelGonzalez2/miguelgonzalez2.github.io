@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Miguel González
-email: mgonzalez.contacto@gmail.com
+email: miguel.gonzalez@icmat.es
 description: >- # this means to ignore newlines until "baseurl:"
   This is my personal website. You can find about my projects in the projects section, and learn more about me in the about section.
 baseurl: "" # the subpath of your site, e.g. /blog
