@@ -18,7 +18,9 @@
 
 Here you will find some of my published documents of several kinds.
 
-### Preprints
+### Preprints 
+
+- **Cyclic Higgs bundles and the Toledo invariant.** _(With Oscar García-Prada)_ [arXiv link](http://arxiv.org/abs/2403.00415)
 
 - **Hitchin map on even very stable upward flows.** _(With Tamás Hausel)_ [arXiv link](https://arxiv.org/abs/2303.01404)
 
