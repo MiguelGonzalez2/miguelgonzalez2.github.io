@@ -2,6 +2,7 @@
 layout: post
 title: My first blog post
 permalink: /posts/first_post
+giscus_comments: true
 ---
 
 Hi! My name is Miguel González and I'm currently studying a Double Degree in Mathematics and Computer Science at Universidad Autónoma de Madrid.

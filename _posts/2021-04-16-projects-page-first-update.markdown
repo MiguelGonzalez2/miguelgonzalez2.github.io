@@ -3,6 +3,7 @@ layout: post
 title: Updated my projects page for the first time
 permalink: /posts/projects-page-created
 date: 2021-04-16 17:00:00
+giscus_comments: true
 ---
 
 I've just updated my [projects](/projects) page and added the very first batch of _ApunTeX_. But... what are ApunTex?

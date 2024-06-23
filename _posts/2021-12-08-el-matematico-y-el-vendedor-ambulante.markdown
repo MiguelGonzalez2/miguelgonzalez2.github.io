@@ -3,6 +3,7 @@ layout: post
 title: El matemático y el vendedor ambulante
 permalink: /posts/el-matematico-y-el-vendedor-ambulante
 date: 2021-12-08 00:00:00
+giscus_comments: true
 ---
 
 {::options parse_block_html="true" /}
