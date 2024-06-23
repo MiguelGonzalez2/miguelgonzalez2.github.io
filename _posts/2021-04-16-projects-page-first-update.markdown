@@ -5,7 +5,7 @@ permalink: /posts/projects-page-created
 date: 2021-04-16 17:00:00
 ---
 
-I've just updated my [projects]({% link projects.markdown %}) page and added the very first batch of _ApunTeX_. But... what are ApunTex?
+I've just updated my [projects](/projects) page and added the very first batch of _ApunTeX_. But... what are ApunTex?
 
 They are my revised class notes (in Spanish) from lectures I attended as part of my Degree in Mathematics. I revise them individually, adding a cover image, a summary page and short explanatory paragraphs where I felt they were needed, and then publish them here.
 
@@ -23,8 +23,8 @@ These documents **are NOT**:
 
 If you are studying mathematics at a Spanish college, or might be interested in learning maths and know the language, feel free to download them!
 
-As soon as I have some spare time to keep reviewing the remaining documents, I will publish them to the same [projects]({% link projects.markdown %}) page.
+As soon as I have some spare time to keep reviewing the remaining documents, I will publish them to the same [projects](/projects) page.
 
-[Back to the posts page.]({% link posts.markdown %})
+[Back to the posts page.](/blog)
 
 
