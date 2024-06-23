@@ -37,15 +37,13 @@ Esta entrada participa en la Edición 12.4: ["Quod Erat Demonstrandum"](https://
 
 El matemático necesita encontrar un camino que atraviese todas y cada una de las ciudades que le ha indicado su amigo el vendedor ambulante:
 
-![Grafo peninsula](/assets/img/posts/el-matematico-y-el-vendedor-ambulante/sparse_graph.png)
-{: style="height: auto; max-width: 70%; margin-left: auto; margin-right: auto; display:block;"}
+{% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/sparse_graph.png" class="img-fluid rounded z-depth-1" %}
 
 Por supuesto, el vendedor vive en una de las ciudades, de la que saldrá al iniciar su ruta, y a la que volverá tras acabarla. Lo primero que observó el matemático, es que en la ruta no habrá ciudades repetidas, puesto que si el vendedor ambulante ya ha hecho negocios en una de ellas, difícilmente reunirá más clientes si pasa una segunda vez.
 
 El matemático se pone manos a la obra, y decide utilizar un **grafo** para representar el problema. Primero, representa cada ciudad con un círculo que llama **vértice**, y después, conecta cada uno de los pares de ciudades con una línea llamada **arista**. En cada arista, asimismo, el matemático escribe cuánto tarda el vendedor en ir entre las dos ciudades. Este es un ejemplo para un menor número de ciudades:
 
-![Grafo de 4 ciudades](/assets/img/posts/el-matematico-y-el-vendedor-ambulante/grafo.png)
-{: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
+{% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/grafo.png" class="img-fluid rounded z-depth-1" %}
 
 Como el matemático ha conectado cada par de ciudades, para poder así tener en cuenta todas las posibilidades de movimientos, el grafo resultante es, según él dice, **"completo"**, es decir, existe una conexión entre cada par de vértices.
 
@@ -64,13 +62,11 @@ Quizás en el grafo de ejemplo sea fácil de obtener, pero el matemático ve imp
 
 Para ilustrar el ejemplo, el matemático utiliza este grafo un poco más complicado que el anterior:
 
-![Grafo de 5 ciudades](/assets/img/posts/el-matematico-y-el-vendedor-ambulante/grafo5.png)
-{: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
+{% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/grafo5.png" class="img-fluid rounded z-depth-1" %}
 
 Ahora, el matemático marca las aristas más baratas, para darles prioridad. Esto lo hace en orden, es decir, primero marca la arista que cuesta $$1$$, luego la que cuesta $$2$$ y así sucesivamente. Al hacerlo, tiene cuidado de no repetir ciudades: si alguna arista le obligase a visitar ciudades repetidas (es decir, si crea un ciclo que no pasa por todas las ciudades), se la salta. Este es el resultado:
 
-![Grafo kruskal](/assets/img/posts/el-matematico-y-el-vendedor-ambulante/kruskal.png)
-{: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
+{% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/kruskal.png" class="img-fluid rounded z-depth-1" %}
 
 Como habíamos anticipado, el matemático se ha tenido que saltar la arista de distancia $$4$$ entre Numerasia y Hamiltonia, puesto que habría cerrado el ciclo antes de tiempo. De hecho, ya no puede añadir ninguna arista más sin que eso ocurra. 
 
@@ -81,18 +77,15 @@ El matemático ha ejecutado lo que se conoce como el [algoritmo de Kruskal](http
 
 El matemático está convencido de que estaría bien utilizar esas aristas, aunque sabe que no va a poder usar todas, porque necesita que el camino empiece y termine en el mismo vértice. Una buena manera de hacerlo, se le ocurre, es la siguiente. Partimos de las aristas marcadas:
 
-![Grafo arbol recubridor](/assets/img/posts/el-matematico-y-el-vendedor-ambulante/mst.png)
-{: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
+{% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/mst.png" class="img-fluid rounded z-depth-1" %}
 
 El matemático no sabe muy bien cómo encontrar un ciclo Hamiltoniano añadiendo pocas aristas, pero recuerda de su época de estudiante un [teorema](https://es.wikipedia.org/wiki/Ciclo_euleriano) que le permite encontrar un ciclo en el grafo que pase por todas las **aristas** una única vez (aunque podría pasar varias veces por un vértice). Para ello, necesita que el número de aristas conectadas con cada vértice sea par, así que añade algunas más para que así sea:
 
-![Grafo apareamiento arbol recubridor](/assets/img/posts/el-matematico-y-el-vendedor-ambulante/matching.png)
-{: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
+{% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/matching.png" class="img-fluid rounded z-depth-1" %}
 
 Ahora ya puede encontrar un ciclo como el descrito anteriormente, y así lo hace: _Euleria - Reino de Möbius - Numerasia - Hamiltonia - Reino de Möbius - Ciudad Gauss - Euleria_. Como había anticipado, una de las ciudades se repite, pero simplemente se la salta la segunda vez, para evitarlo. Esto da lugar al siguiente trayecto final:
 
-![Grafo christofides](/assets/img/posts/el-matematico-y-el-vendedor-ambulante/christofides.png)
-{: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
+{% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/christofides.png" class="img-fluid rounded z-depth-1" %}
 
 El coste es de $$2+1+4+9+5 = 21$$. El matemático está bastante contento con este resultado, y se dispone a aplicarlo en el mapa del vendedor ambulante. ¡Qué alivio!
 
@@ -124,8 +117,7 @@ El matemático se ha encontrado con un nuevo problema, aún más difícil si cab
 
 Primero, va a poner dos aristas entre cada par de vértices, una en cada sentido. Para representar esto, utiliza flechas en vez de líneas. Esto le permite registrar los nuevos costes, en un grafo que él llama **"dirigido"**:
 
-![Grafo dirigido](/assets/img/posts/el-matematico-y-el-vendedor-ambulante/undirected.png)
-{: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
+{% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/undirected.png" class="img-fluid rounded z-depth-1" %}
 
 ¡Qué complicado! Ahora tiene muchas más aristas con las que trabajar, no sabe si el procedimiento que siguió antes va a funcionar y cada arista solo puede recorrerse en el sentido de la flecha, y no al revés.
 
@@ -140,13 +132,11 @@ De repente, el matemático tiene una idea brillante. Va a ver el problema desde 
 
 Lo que quiere decir el matemático, es que va a convertir la ciudad de _Euleria_ en dos vértices: _EntrarEuleria_ y _SalirEuleria_. Aunque esto pueda parecer que no tiene sentido, la idea está clara con un ejemplo. Supongamos que tenemos este grafo tan sencillo:
 
-![arista asimétrica](/assets/img/posts/el-matematico-y-el-vendedor-ambulante/asym2.png)
-{: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
+{% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/asym2.png" class="img-fluid rounded z-depth-1" %}
 
 El ciclo óptimo es, evidentemente, _Euleria - Numerasia - Euleria_. Si ponemos en práctica la idea del matemático, podemos convertirlo en este grafo que representa el mismo problema, pero ahora no es dirigido:
 
-![simetrizacion](/assets/img/posts/el-matematico-y-el-vendedor-ambulante/sym.png)
-{: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
+{% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/sym.png" class="img-fluid rounded z-depth-1" %}
 
 Por supuesto, si salimos de _Euleria_ para entrar a _Numerasia_, el coste es $$2$$, y si salimos de _Numerasia_ para entrar en _Euleria_, el coste es $$5$$. El coste entre entrar y salir de una misma ciudad es $$0$$, porque no estamos recorriendo camino en el proceso. Por otro lado, el coste de conexiones imposibles, como salir de _Euleria_ y después salir de _Numerasia_ (sin haber entrado), será de infinito, y así no aparecerá en la solución mínima.
 
@@ -184,18 +174,15 @@ El matemático ya se está quedando sin ideas.
 
 Al matemático se le ha ocurrido una sencilla idea para convertir el problema en el tradicional que vimos en el Acto I. Supongamos que comenzamos, por ejemplo, en este grafo:
 
-![multiple](/assets/img/posts/el-matematico-y-el-vendedor-ambulante/mtsp.png)
-{: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
+{% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/mtsp.png" class="img-fluid rounded z-depth-1" %}
 
 También supondremos que la ciudad donde habitan los tres viajantes es _Euleria_. Hemos dicho anteriormente que no podemos trocear un trayecto óptimo en tres, porque todos ellos deberían empezar y acabar en _Euleria_, y esta ciudad solo aparece una vez en cualquier solución. La idea del matemático es sencilla: habrá tres _"copias"_ de _Euleria_:
 
-![triple](/assets/img/posts/el-matematico-y-el-vendedor-ambulante/triple.png)
-{: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
+{% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/triple.png" class="img-fluid rounded z-depth-1" %}
 
 ¡Qué bonito! Fijémonos además que la distancia entre las copias es infinita: así, no podrá haber dos seguidas en un camino óptimo. Ahora, resolvemos el ciclo hamiltoniano óptimo para todo el grafo:
 
-![multiple solution](/assets/img/posts/el-matematico-y-el-vendedor-ambulante/mtsp_sol.png)
-{: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
+{% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/mtsp_sol.png" class="img-fluid rounded z-depth-1" %}
 
 Ha salido _Euleria - Numerasia - Euleria2 - Ciudad Gauss - Euleria3 - Hamiltonia_, con coste total $$5+5+5+5+8+8 = 36$$. Ahora, lo único que hay que hacer es que cada viajante recorra uno de los tramos que quedan separados por las distintas copias. Es decir, ¡ahora sí podemos dividir en tres el camino!. Uno de los viajantes hará _Euleria - Numerasia - Euleria_, el otro _Euleria - Ciudad Gauss - Euleria_, y el último _Euleria - Hamiltonia - Euleria_. La suma de los costes es la que habíamos obtenido, $$36$$.
 
@@ -247,13 +234,11 @@ Como es habitual, el matemático tiene que modificar el problema para que se aju
 
 Para explicarlo, el matemático parte del siguiente grafo de ejemplo:
 
-![ctsp](/assets/img/posts/el-matematico-y-el-vendedor-ambulante/ctsp.png)
-{: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
+{% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/ctsp.png" class="img-fluid rounded z-depth-1" %}
 
 Como ha mencionado, todos los vértices están coloreados de alguno de los tres colores, a excepción del punto de partida, _Euleria_, que no puede estar coloreado porque todos deben empezar allí. Ahora, hace el truco habitual de triplicar el punto de partida, y como cada una de las copias representa un empleado, las colorea cada una con un color (el correspondiente al empleado):
 
-![ctsp2](/assets/img/posts/el-matematico-y-el-vendedor-ambulante/ctsp2.png)
-{: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
+{% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/ctsp2.png" class="img-fluid rounded z-depth-1" %}
 
 Así, el empleado que empieza desde _Euleria_ es el rojo, el de _Euleria2_ es el azul y el de _Euleria3_ es el amarillo. 
 
@@ -261,8 +246,7 @@ Así, el empleado que empieza desde _Euleria_ es el rojo, el de _Euleria2_ es el
 
 Como ha explicado el matemático:
 
-![ctsp3](/assets/img/posts/el-matematico-y-el-vendedor-ambulante/ctsp3.png)
-{: style="height: auto; max-width: 95%; margin-left: auto; margin-right: auto; display:block;"}
+{% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/ctsp3.png" class="img-fluid rounded z-depth-1" %}
 
 Ahora, el problema es fácil, puesto que se obtienen tres grafos distintos, y se puede resolver el problema original del Acto I en cada uno de ellos. En estos grafos concretos es muy fácil, al solo haber dos vértices en cada uno. Se obtienen así las tres rutas deseadas _Euleria - Hamiltonia - Euleria_, _Euleria - Ciudad Gauss - Euleria_ y _Euleria - Numerasia - Euleria_. El coste es, si tenemos en cuenta volver a _Euleria_, $$5+5+5+5+8+8 = 36$$.
 
