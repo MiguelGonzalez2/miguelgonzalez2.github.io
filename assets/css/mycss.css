@@ -1,0 +1,104 @@
+.toc {
+  background-color: lightgoldenrodyellow;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.toc > ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.toc ul {
+  list-style-type: none;
+}
+
+.toc a {
+  color: darkblue; /* Para que el color lo decida el div padre*/
+  text-decoration: none;
+  transition-duration: 250ms;
+}
+
+.toc a:hover {
+  color: blue; /* Para que el color lo decida el div padre*/
+  text-decoration: none;
+  transition-duration: 250ms;
+}
+
+.exercisetoggle {
+  background-color: lightgray;
+  width: auto;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 20px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  user-select: none;
+  text-align: justify;
+}
+
+.exercisetoggledummy {
+  background-color: lightgray;
+  width: auto;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 20px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  user-select: none;
+  text-align: justify;
+}
+
+.exercisesolution {
+  background-color: lightblue;
+  width: auto;
+  padding: 5px;
+  padding-left: 15px;
+  border-radius: 5px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.emphasizebox {
+  background-color: white;
+  width: auto;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 20px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  user-select: none;
+  text-align: justify;
+}
+
+.softbox {
+  background-color: lightsteelblue;
+  width: auto;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 600;
+  user-select: none;
+  text-align: justify;
+}

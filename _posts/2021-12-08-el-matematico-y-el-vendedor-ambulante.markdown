@@ -8,6 +8,10 @@ giscus_comments: true
 
 {::options parse_block_html="true" /}
 
+<link rel="stylesheet" href="{{ "/assets/css/mycss.css" | relative_url }}">
+<script src="{{ "/assets/js/jquery-3.6.0.min.js" | relative_url }}" type="text/javascript"></script>
+<script src="{{ "/assets/js/myjs.js" | relative_url }}" type="text/javascript"></script>
+	
 <div class="softbox">
 Esta entrada participa en la Edición 12.4: ["Quod Erat Demonstrandum"](https://verso.mat.uam.es/~qed/carnamat.html) del Carnaval de Matemáticas, organizado en esta ocasión por la Asociación de Estudiantes [QED](https://verso.mat.uam.es/~qed/).
 </div>
@@ -23,13 +27,14 @@ Esta entrada participa en la Edición 12.4: ["Quod Erat Demonstrandum"](https://
 </div>
 
 ## **Acto I.** El problema del viajante.
-> Vendedor ambulante.- ¡Por fin te encuentro, matemático! ¡Tengo un gran problema!   
+
+> Vendedor ambulante.- ¡Por fin te encuentro, matemático! ¡Tengo un gran problema!
 >
 > Matemático.- ¿Qué ocurre?
 >
 > Vendedor ambulante.- Me gustaría vender mis hortalizas a lo largo de toda la península, pero pierdo mucho tiempo haciéndolo. Necesito que me encuentres un camino eficiente para poder vender todos mis productos lo más rápido posible. Además, ya sé lo que tardo en moverme de una ciudad a otra, así que lo tienes fácil.
 >
-> Matemático.- ¡¿Toda la península?! 
+> Matemático.- ¡¿Toda la península?!
 >
 > (Más tarde)
 >
@@ -49,14 +54,14 @@ Como el matemático ha conectado cada par de ciudades, para poder así tener en 
 
 El objetivo del matemático ahora es encontrar un **ciclo** en el grafo, es decir, una sucesión de vértices a partir de uno dado, que además incluya todos los vértices una única vez y vuelva al punto de partida tras ello. Esto se traducirá en la ruta deseada para el vendedor ambulante. Un ciclo así, dice el matemático, se llama **ciclo "Hamiltoniano"**.
 
-Encontrar una ruta con esas características es muy fácil: como cada vértice se conecta con todos los demás, se puede empezar en un vértice y elegir cualquiera de los restantes como siguiente destino, repitiendo hasta quedarse sin ciudades por visitar. Finalmente, se volvería al vértice de origen. Por ejemplo, en el grafo anterior, un posible ciclo sería _Euleria - Reino de Möbius - Ciudad Gauss - Numerasia - Euleria_. No obstante, si sumamos lo que tarda el vendedor ambulante en recorrerlo, llegamos a $$11+5+7+5 = 28$$. 
+Encontrar una ruta con esas características es muy fácil: como cada vértice se conecta con todos los demás, se puede empezar en un vértice y elegir cualquiera de los restantes como siguiente destino, repitiendo hasta quedarse sin ciudades por visitar. Finalmente, se volvería al vértice de origen. Por ejemplo, en el grafo anterior, un posible ciclo sería _Euleria - Reino de Möbius - Ciudad Gauss - Numerasia - Euleria_. No obstante, si sumamos lo que tarda el vendedor ambulante en recorrerlo, llegamos a $$11+5+7+5 = 28$$.
 
 El matemático rápidamente se da cuenta de que, visitando Ciudad Gauss y Numerasia antes que el Reino de Möbius, en lugar de después, el vendedor ambulante tardaría $$5+7+1+11 = 24$$, es decir, menos. El objetivo está claro. El matemático llama **coste** a la suma de los tiempos de cada arista, y enuncia:
 
 **Problema del viajante.** Dado un grafo completo, encontrar un ciclo Hamiltoniano de coste mínimo.
 {: class="emphasizebox"}
 
-Quizás en el grafo de ejemplo sea fácil de obtener, pero el matemático ve imposible atacar el problema para todas las ciudades de la península. ¡Hay muchísimas combinaciones! Al matemático, sin embargo, se le ocurre una manera inteligente de encontrar un trayecto bastante bueno. 
+Quizás en el grafo de ejemplo sea fácil de obtener, pero el matemático ve imposible atacar el problema para todas las ciudades de la península. ¡Hay muchísimas combinaciones! Al matemático, sin embargo, se le ocurre una manera inteligente de encontrar un trayecto bastante bueno.
 
 > Matemático.- El trayecto debería utilizar las aristas más baratas. No es posible que, si entre dos ciudades se tarda en viajar un minuto, no sean visitadas en sucesión.
 
@@ -68,7 +73,7 @@ Ahora, el matemático marca las aristas más baratas, para darles prioridad. Est
 
 {% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/kruskal.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-Como habíamos anticipado, el matemático se ha tenido que saltar la arista de distancia $$4$$ entre Numerasia y Hamiltonia, puesto que habría cerrado el ciclo antes de tiempo. De hecho, ya no puede añadir ninguna arista más sin que eso ocurra. 
+Como habíamos anticipado, el matemático se ha tenido que saltar la arista de distancia $$4$$ entre Numerasia y Hamiltonia, puesto que habría cerrado el ciclo antes de tiempo. De hecho, ya no puede añadir ninguna arista más sin que eso ocurra.
 
 (Clic para saber más)
 {: class="exercisetoggle"}
@@ -95,6 +100,7 @@ El matemático ha seguido paso a paso el [algoritmo de Christofides](https://es.
 {: class="exercisesolution"}
 
 ## **Acto II.** El orden de los factores.
+
 > Matemático.- ¡Cuánto tiempo, vendedor! ¿Qué tal va la ruta que calculé para ti? ¿Está siendo beneficiosa?
 >
 > Vendedor ambulante.- Verás...
@@ -107,13 +113,13 @@ El matemático ha seguido paso a paso el [algoritmo de Christofides](https://es.
 >
 > Vendedor ambulante.- Sin embargo, en tu ruta no voy de Madrid a Segovia, sino de Segovia a Madrid. Por algún motivo que no entiendo, ¡tardo más si voy al revés!
 >
-> Matemático.- ¿Será por el desnivel? ¿O quizás el tráfico? ¿Tienes que pasar peajes solo en una de las direcciones? 
+> Matemático.- ¿Será por el desnivel? ¿O quizás el tráfico? ¿Tienes que pasar peajes solo en una de las direcciones?
 >
 > Vendedor ambulante.- No tengo ni idea, pero estás de enhorabuena. He calculado los tiempos en ambos sentidos para todas las ciudades. Ahora, es tu momento de encontrarme otra ruta mejor.
 >
 > Matemático.- (Creo que esto es lo contrario de estar de enhorabuena...)
 
-El matemático se ha encontrado con un nuevo problema, aún más difícil si cabe. Ahora, el coste entre vértices depende del sentido de recorrido. Por tanto, ya no podrá usar su técnica de utilizar un grafo, al menos no como el que usaba antes. Por fortuna, al matemático se le ha ocurrido una posible idea. 
+El matemático se ha encontrado con un nuevo problema, aún más difícil si cabe. Ahora, el coste entre vértices depende del sentido de recorrido. Por tanto, ya no podrá usar su técnica de utilizar un grafo, al menos no como el que usaba antes. Por fortuna, al matemático se le ha ocurrido una posible idea.
 
 Primero, va a poner dos aristas entre cada par de vértices, una en cada sentido. Para representar esto, utiliza flechas en vez de líneas. Esto le permite registrar los nuevos costes, en un grafo que él llama **"dirigido"**:
 
@@ -128,7 +134,7 @@ Primero, va a poner dos aristas entre cada par de vértices, una en cada sentido
 
 De repente, el matemático tiene una idea brillante. Va a ver el problema desde otra perspectiva. Desde una perspectiva en la que se obtiene un grafo no dirigido.
 
-> Matemático.- Ya lo tengo. Voy a hacer que cada vértice no represente una ciudad, sino **el hecho de entrar en una ciudad**. También voy a añadir otro vértice que represente **el hecho de salir de una ciudad**. 
+> Matemático.- Ya lo tengo. Voy a hacer que cada vértice no represente una ciudad, sino **el hecho de entrar en una ciudad**. También voy a añadir otro vértice que represente **el hecho de salir de una ciudad**.
 
 Lo que quiere decir el matemático, es que va a convertir la ciudad de _Euleria_ en dos vértices: _EntrarEuleria_ y _SalirEuleria_. Aunque esto pueda parecer que no tiene sentido, la idea está clara con un ejemplo. Supongamos que tenemos este grafo tan sencillo:
 
@@ -140,13 +146,14 @@ El ciclo óptimo es, evidentemente, _Euleria - Numerasia - Euleria_. Si ponemos 
 
 Por supuesto, si salimos de _Euleria_ para entrar a _Numerasia_, el coste es $$2$$, y si salimos de _Numerasia_ para entrar en _Euleria_, el coste es $$5$$. El coste entre entrar y salir de una misma ciudad es $$0$$, porque no estamos recorriendo camino en el proceso. Por otro lado, el coste de conexiones imposibles, como salir de _Euleria_ y después salir de _Numerasia_ (sin haber entrado), será de infinito, y así no aparecerá en la solución mínima.
 
-Vemos también que el ciclo Hamiltoniano óptimo es ahora _EntrarEuleria - SalirEuleria - EntrarNumerasia - SalirNumerasia_. Esto se traduce fácilmente a _Euleria - Numerasia_, en cuanto al orden de ciudades se refiere. El coste sigue siendo $$5+0+2+0 = 7$$. 
+Vemos también que el ciclo Hamiltoniano óptimo es ahora _EntrarEuleria - SalirEuleria - EntrarNumerasia - SalirNumerasia_. Esto se traduce fácilmente a _Euleria - Numerasia_, en cuanto al orden de ciudades se refiere. El coste sigue siendo $$5+0+2+0 = 7$$.
 
 Este procedimiento aplicado a cada par de nodos permite transformar el problema del viajante asimétrico en el problema del Acto I.
 
 > Matemático.- Ahora ya puedo aplicar lo que hice el otro día, cuando el grafo no era dirigido, y darle al vendedor la ruta que necesita. No hay problema que un matemático no pueda resolver...
 
 ## **Acto III.** La suma de las partes.
+
 > Vendedor ambulante.- Ese es... ¡Sí! ¡Oye, matemático! ¡Soy yo!
 >
 > Matemático.- No es posible, me ha visto...
@@ -168,7 +175,7 @@ Una vez más, es hora de codificar este problema mediante un grafo. Ahora que ha
 **Problema del viajante múltiple.** Dado un grafo completo, encontrar $$N$$ (en nuestro caso, $$3$$) ciclos, que comiencen en el mismo vértice de origen, y visiten todas las demás ciudades una única vez entre todos. La suma de los costes de los tres ciclos debe ser mínima.
 {: class="emphasizebox"}
 
-El matemático ya se está quedando sin ideas. 
+El matemático ya se está quedando sin ideas.
 
 > Matemático.- El problema ya era complicadísimo con un viajante, y ahora resulta que tengo que poner más. Esto tiene que ser imposible, a no ser...
 
@@ -189,6 +196,7 @@ Ha salido _Euleria - Numerasia - Euleria2 - Ciudad Gauss - Euleria3 - Hamiltonia
 > Matemático.- Creo que con este mecanismo lo he conseguido. Ya tengo la solución para el vendedor, y lo bueno es que solo he tenido que reducirlo al problema original, de nuevo. Es imposible que este problema pueda complicarse aún más. Bueno, podría buscar que la ruta más larga de las tres fuese de distancia mínima, y no la suma de todas ellas, pero creo que por ahora voy a pasar del tema.
 
 ## **Acto IV.** Satisfaciendo necesidades.
+
 > (De noche. Llaman a la puerta.)
 >
 > Matemático.- Zzz...
@@ -240,7 +248,7 @@ Como ha mencionado, todos los vértices están coloreados de alguno de los tres 
 
 {% include figure.liquid loading="eager" path="assets/img/posts/el-matematico-y-el-vendedor-ambulante/ctsp2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-Así, el empleado que empieza desde _Euleria_ es el rojo, el de _Euleria2_ es el azul y el de _Euleria3_ es el amarillo. 
+Así, el empleado que empieza desde _Euleria_ es el rojo, el de _Euleria2_ es el azul y el de _Euleria3_ es el amarillo.
 
 > Matemático.- El truco es el siguiente. Voy a eliminar todas las aristas que conectan nodos de distinto color. Así, cada empleado solo podrá quedarse en su color, evitando que cambie al color equivocado.
 
@@ -251,18 +259,21 @@ Como ha explicado el matemático:
 Ahora, el problema es fácil, puesto que se obtienen tres grafos distintos, y se puede resolver el problema original del Acto I en cada uno de ellos. En estos grafos concretos es muy fácil, al solo haber dos vértices en cada uno. Se obtienen así las tres rutas deseadas _Euleria - Hamiltonia - Euleria_, _Euleria - Ciudad Gauss - Euleria_ y _Euleria - Numerasia - Euleria_. El coste es, si tenemos en cuenta volver a _Euleria_, $$5+5+5+5+8+8 = 36$$.
 
 ## **Acto V.** Epílogo.
+
 > Matemático.- Gracias por pagarme por mis esfuerzos. Creía que no tendrías tiempo, con todo lo que viajas.
 >
 > Vendedor ambulante.- Es lo menos que puedo hacer. Aunque, tengo una última pregunta...
 >
 > Matemático.- (Palidece).
-> 
+>
 > Vendedor ambulante.- ¿Cómo haces para resolver todas las locuras que se me ocurren?
 >
 > FIN.
 
 <a name="acto-6"></a>
+
 ### Referencias.
+
 1. [Algoritmo de Christofides](https://es.wikipedia.org/wiki/Algoritmo_de_Christofides)
 2. [R. Kumar, H. Li. Transformation to Symmetric TSP and Performance Bound](http://home.eng.iastate.edu/~rkumar/PUBS/atsp.pdf)
 3. [T. Bektas. The multiple travelling salesman problem: an overview of formulations and solution procedures.](http://pdf.xuebalib.com:1262/xuebalib.com.13149.pdf)
@@ -271,5 +282,3 @@ Ahora, el problema es fácil, puesto que se obtienen tres grafos distintos, y se
 6. [Editor interactivo de grafos](https://graphonline.ru/en/#)
 
 [Volver a la página de posts.](/blog)
-
-
