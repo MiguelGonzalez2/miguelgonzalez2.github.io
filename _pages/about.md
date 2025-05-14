@@ -22,4 +22,4 @@ My name is Miguel González and I am a PhD Student Researcher at Instituto de Ci
 
 My mathematical interests lie in the area of algebraic and complex geometry. I am interested in the study of moduli spaces of geometric structures on Riemann surfaces (such as Higgs bundles), Langlands duality and mirror symmetry. My PhD project is titled "Higgs bundles, Hausel algebras and involutions", under the supervision of [Oscar García-Prada](https://www.icmat.es/miembros/garcia-prada/) and [Tamás Hausel](https://hausel.ist.ac.at/tamas-hausel/). You may find my research-related publications in the [research](/publications) section.
 
-You can contact me at my [email adress](mailto:{{ site.email }}), and find more about my career at [linkedin](https://linkedin.com/in/MiguelGonzalezGonzalez). Here is [my CV](/assets/pdf/cv_miguel.pdf).
+You can contact me at my [email address](mailto:{{ site.email }}), and find more about my career at [linkedin](https://linkedin.com/in/MiguelGonzalezGonzalez). Here is [my CV](/assets/pdf/cv_miguel.pdf).
