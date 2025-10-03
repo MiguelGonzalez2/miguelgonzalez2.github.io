@@ -1,13 +1,14 @@
-/* ===================== */
-/* Main section headers (type) */
-/* ===================== */
-.pub-type {
-  color: #000 !important; /* black in light mode */
-  text-align: left !important; /* move left */
+/* Section headers on publications page */
+.publications h2.bibliography {
+  color: #000 !important;
+  border-top: 1px solid #000 !important;
+  padding-top: 1rem;
+  margin-top: 2rem;
 }
 
 @media (prefers-color-scheme: dark) {
-  .pub-type {
-    color: #fff !important; /* white in dark mode */
+  .publications h2.bibliography {
+    color: #fff !important;
+    border-top: 1px solid #fff !important;
   }
 }
