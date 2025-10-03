@@ -2,12 +2,12 @@
 /* Main section headers (type) */
 /* ===================== */
 .pub-type {
-  color: #000 !important;         /* black in light mode */
-  text-align: left !important;    /* move left */
+  color: #000 !important; /* black in light mode */
+  text-align: left !important; /* move left */
 }
 
 @media (prefers-color-scheme: dark) {
   .pub-type {
-    color: #fff !important;       /* white in dark mode */
+    color: #fff !important; /* white in dark mode */
   }
 }
