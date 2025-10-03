@@ -6,9 +6,8 @@
   margin-top: 2rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  .publications h2.bibliography {
-    color: #fff !important;
-    border-top: 1px solid #fff !important;
-  }
+/* Dark mode — triggered by al-folio theme toggle */
+html[data-theme="dark"] .publications h2.bibliography {
+  color: #fff !important;
+  border-top: 1px solid #fff !important;
 }
