@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My joint work [_Cyclic Higgs bundles and the Toledo invariant_](https://doi.org/10.1007/s00031-026-09962-2) with [Oscar García-Prada](https://www.icmat.es/miembros/garcia-prada/) has been published in [Transformation Groups](https://link.springer.com/journal/31). Check [my research page](/publications) for more information.
+My paper [Cyclic Higgs bundles and the Toledo invariant](https://doi.org/10.1007/s00031-026-09962-2), together with [Oscar García-Prada],(https://www.icmat.es/miembros/garcia-prada/) has been published in [Transformation Groups](https://link.springer.com/journal/31). Check [my research page](/publications) for more information.
