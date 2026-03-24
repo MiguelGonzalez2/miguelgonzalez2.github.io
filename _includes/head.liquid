@@ -78,8 +78,14 @@
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
 <!-- Dark Mode -->
+<script defer src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
 <script>
-  {% include_relative assets/js/theme.js %}
+  /* We keep the init call here, but ensure it runs only after the script is ready or via a small inline check */
+  document.addEventListener("DOMContentLoaded", function() {
+    if (typeof initTheme === 'function') {
+      initTheme();
+    }
+  });
 </script>
 {% if site.enable_darkmode %}
   <link
