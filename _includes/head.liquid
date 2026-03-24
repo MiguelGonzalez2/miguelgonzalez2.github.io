@@ -79,14 +79,6 @@
 
 <!-- Dark Mode -->
 <script defer src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
-<script>
-  /* We keep the init call here, but ensure it runs only after the script is ready or via a small inline check */
-  document.addEventListener("DOMContentLoaded", function() {
-    if (typeof initTheme === 'function') {
-      initTheme();
-    }
-  });
-</script>
 {% if site.enable_darkmode %}
   <link
     defer
