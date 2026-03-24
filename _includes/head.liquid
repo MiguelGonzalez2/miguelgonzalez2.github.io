@@ -1,6 +1,9 @@
 <!-- Metadata, OpenGraph and Schema.org -->
 {% include metadata.liquid %}
 
+<!-- Preload profile pic -->
+<link rel="preload" as="image" href="{{ '/assets/img/profile.webp' | relative_url }}" fetchpriority="high">
+
 <!-- Bootstrap & MDB -->
 <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
 <link
@@ -24,10 +27,9 @@
 <!-- Fonts & Icons -->
 <link defer rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
 <link
-  defer
   rel="stylesheet"
   type="text/css"
-  href="{{ site.third_party_libraries.google_fonts.url.fonts }}"
+  href="{{ site.third_party_libraries.google_fonts.url.fonts }}&display=swap"
 >
 
 <!-- Code Syntax Highlighting -->
