@@ -6,7 +6,7 @@ subtitle: PhD Student Researcher in Mathematics
 
 profile:
   align: right
-  image: profile_new.JPG
+  image: profile.webp
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Office 413, Instituto de Ciencias Matemáticas (ICMAT)</p>
