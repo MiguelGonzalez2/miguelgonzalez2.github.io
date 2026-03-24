@@ -4,17 +4,12 @@
 <!-- Preload profile pic -->
 <link rel="preload" as="image" href="{{ '/assets/img/profile.webp' | relative_url }}" fetchpriority="high">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <!-- Bootstrap & MDB -->
 <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
 <link
   rel="stylesheet"
   href="{{ site.third_party_libraries.mdb.url.css }}"
   integrity="{{ site.third_party_libraries.mdb.integrity.css }}"
-  media="print"
-  onload="this.media='all'"
   crossorigin="anonymous"
 >
 
@@ -30,7 +25,7 @@
 {% endif %}
 
 <!-- Fonts & Icons -->
-<link defer rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}" media="print" onload="this.media='all'">
+<link defer rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
 <link
   rel="stylesheet"
   type="text/css"
@@ -42,8 +37,7 @@
   defer
   rel="stylesheet"
   href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url | bust_file_cache }}"
-  media="print"
-  onload="this.media='all'"
+  media=""
   id="highlight_theme_light"
 >
 
@@ -78,7 +72,7 @@
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
 <!-- Dark Mode -->
-<script defer src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
+<script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
 {% if site.enable_darkmode %}
   <link
     defer
