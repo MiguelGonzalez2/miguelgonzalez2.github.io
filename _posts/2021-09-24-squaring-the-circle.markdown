@@ -4,6 +4,7 @@ title: Squaring the circle
 permalink: /posts/squaring-the-circle
 date: 2021-09-24 00:00:00
 giscus_comments: true
+mathjax: true
 ---
 
 {::options parse_block_html="true" /}
