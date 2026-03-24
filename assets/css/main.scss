@@ -24,3 +24,12 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+/* Target the profile image specifically to lock the layout */
+.profile img {
+  /* Forces a 1:1 ratio even before the file is parsed */
+  aspect-ratio: 1 / 1 !important;
+  /* Ensures it doesn't exceed its container */
+  width: 100% !important;
+  height: auto !important;
+}
