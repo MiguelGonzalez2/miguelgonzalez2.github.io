@@ -12,12 +12,7 @@ html[data-theme="dark"] .publications h2.bibliography {
   border-top: 1px solid #fff !important;
 }
 
-/* Change text color for all venue pills */
-abbr.badge {
-  color: #ffffff !important; /* Change this hex code to your preferred color */
-
-  /* Ensures that clickable venue links also change color */
-  a {
-    color: #ffffff !important;
-  }
+html body abbr.badge,
+html body abbr.badge * {
+  color: #ffffff !important;
 }
