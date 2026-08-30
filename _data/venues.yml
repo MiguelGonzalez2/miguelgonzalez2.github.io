@@ -21,3 +21,12 @@
 "HKLF":
   url: https://www.hklaureateforum.org/en/
   color: "#c9a330"
+
+"Conference":
+  color: "#2e7d32"
+
+"Workshop":
+  color: "#d97706"
+
+"Colloquium":
+  color: "#0f766e"
