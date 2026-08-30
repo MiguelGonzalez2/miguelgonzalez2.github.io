@@ -15,9 +15,9 @@ html[data-theme="dark"] .publications h2.bibliography {
 /* Change text color for all venue pills */
 abbr.badge {
   color: #ffffff !important; /* Change this hex code to your preferred color */
-  
+
   /* Ensures that clickable venue links also change color */
   a {
-    color: #ffffff !important; 
+    color: #ffffff !important;
   }
 }
