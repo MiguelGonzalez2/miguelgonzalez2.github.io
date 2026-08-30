@@ -23,10 +23,10 @@
   color: "#c9a330"
 
 "Conference":
-  color: "#2e7d32; color: #ffffff !important"
+  color: "#2e7d32"
 
 "Workshop":
-  color: "#d97706; color: #ffffff !important"
+  color: "#d97706"
 
 "Colloquium":
-  color: "#0f766e; color: #ffffff !important"
+  color: "#0f766e"
