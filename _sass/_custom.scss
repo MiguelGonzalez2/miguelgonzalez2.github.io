@@ -16,3 +16,10 @@ html body abbr.badge,
 html body abbr.badge * {
   color: #ffffff !important;
 }
+
+.limit-height {
+  max-height: 540px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
