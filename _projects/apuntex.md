@@ -3,6 +3,7 @@ layout: page
 title: ApunTeX
 description: Mathematics Undergraduate Course Notes (in Spanish)
 importance: -1
+img: assets/img/quotient.png
 category: Maths
 related_publications: false
 ---

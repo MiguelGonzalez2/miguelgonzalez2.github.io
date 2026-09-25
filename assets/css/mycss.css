@@ -19,13 +19,13 @@
 }
 
 .toc a {
-  color: darkblue; /* Para que el color lo decida el div padre*/
+  color: darkblue;
   text-decoration: none;
   transition-duration: 250ms;
 }
 
 .toc a:hover {
-  color: blue; /* Para que el color lo decida el div padre*/
+  color: blue;
   text-decoration: none;
   transition-duration: 250ms;
 }
@@ -101,4 +101,38 @@
   font-weight: 600;
   user-select: none;
   text-align: justify;
+}
+
+/* =========================================================
+   Dark mode
+   ========================================================= */
+
+[data-theme="dark"] .toc {
+  background-color: #3b3a20;
+}
+
+[data-theme="dark"] .toc a {
+  color: #9ecbff;
+}
+
+[data-theme="dark"] .toc a:hover {
+  color: #c5deff;
+}
+
+[data-theme="dark"] .exercisetoggle,
+[data-theme="dark"] .exercisetoggledummy {
+  background-color: #3a3a3a;
+}
+
+[data-theme="dark"] .exercisesolution {
+  background-color: #243b4a;
+}
+
+[data-theme="dark"] .emphasizebox {
+  background-color: #252525;
+  border-color: #888;
+}
+
+[data-theme="dark"] .softbox {
+  background-color: #344556;
 }

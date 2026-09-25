@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Projects
+title: Others
 permalink: /projects/
-description: Here you can find some of my projects.
+description: Here you can find some of my side projects.
 nav: true
 nav_order: 3
 display_categories: [Maths]
