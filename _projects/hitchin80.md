@@ -196,7 +196,7 @@ autoplay-disable-on-interaction="true"
 
 Interestingly, the 3d-printer could not handle the first prototype we gave it --- it must have preferred the algebro-geometric interpretation of the Bruhat graphs.
 
-{% include figure.liquid loading="eager" path="assets/img/hitchin80/melt.png" class="limit-height rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="assets/img/hitchin80/melt.png" class="limit-height rounded z-depth-1" %}
 
 In the final sculptures, we kept this idea for the vertex arrangement: the position of each vertex is determined by its image via the moment map (since it takes values in a three-dimensional space). Similarly, the chosen value in the colour gradient at each point of the sculpture is determined by the $\mathbb R = \mathrm{Lie}(\mathbb S^1)$ component of the image via the moment map, called _energy function_ by Atiyah and Pressley.
 
