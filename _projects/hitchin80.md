@@ -115,7 +115,7 @@ autoplay-disable-on-interaction="true"
       loading="eager"
       path="assets/img/hitchin80/front.jpeg"
       class="img-fluid rounded"
-      zoomable="true"
+      zoomable="false"
     %}
   </swiper-slide>
 
@@ -124,7 +124,7 @@ autoplay-disable-on-interaction="true"
       loading="eager"
       path="assets/img/hitchin80/top.jpeg"
       class="img-fluid rounded"
-      zoomable="true"
+      zoomable="false"
     %}
   </swiper-slide>
 
@@ -133,7 +133,7 @@ autoplay-disable-on-interaction="true"
       loading="eager"
       path="assets/img/hitchin80/sideways.jpeg"
       class="img-fluid rounded"
-      zoomable="true"
+      zoomable="false"
     %}
   </swiper-slide>
 
@@ -142,7 +142,7 @@ autoplay-disable-on-interaction="true"
       loading="eager"
       path="assets/img/hitchin80/present.jpeg"
       class="img-fluid rounded"
-      zoomable="true"
+      zoomable="false"
     %}
   </swiper-slide>
 
@@ -183,7 +183,7 @@ autoplay-disable-on-interaction="true"
       loading="eager"
       path="assets/img/hitchin80/moment.jpeg"
       class="img-fluid rounded"
-      zoomable="true"
+      zoomable="false"
     %}
   </swiper-slide>
 
@@ -192,7 +192,7 @@ autoplay-disable-on-interaction="true"
       loading="eager"
       path="assets/img/hitchin80/printing.jpeg"
       class="img-fluid rounded"
-      zoomable="true"
+      zoomable="false"
     %}
   </swiper-slide>
 
