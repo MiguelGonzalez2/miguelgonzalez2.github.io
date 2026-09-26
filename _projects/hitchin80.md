@@ -194,7 +194,7 @@ autoplay-disable-on-interaction="true"
 
 <br/>
 
-Interestingly, the 3d-printer could not handle the first prototype we gave it --- it must have preferred the algebro-geometric interpretation of the Bruhat graphs.
+Interestingly, the 3d-printer could not handle the first prototype we gave it --- it must have preferred the algebro-geometric interpretation with the Bruhat graphs.
 
 {% include figure.liquid loading="eager" path="assets/img/hitchin80/melt.png" class="limit-height rounded z-depth-1" %}
 
@@ -208,7 +208,7 @@ Shortly, one can understand the flows for the $\mathbb C^\times$-action in the n
 
 ## Farewell
 
-This was a very fun project, not only because of the satisfaction of seeing it completed and delivered to Nigel but also because it allowed me to learn many new interesting mathematics, even including some that improved my understanding of my PhD thesis problem, which is something I definitely did not expect to happen when we started with this idea. As a final tribute to Nigel's generosity, here is a picture we took with him --- these are (most of) his Madrid-based, PhD student academic descendants!
+This was a very fun project, not only because of the satisfaction of seeing it completed and delivered to Nigel but also because it allowed me to learn many new interesting mathematics, even including some that improved my understanding of my PhD thesis problem, which is something I definitely did not expect to happen when we started with this idea. As a final tribute to Nigel's influence, here is a picture we took with him --- these are (most of) his Madrid-based, PhD student academic descendants!
 
 {% include figure.liquid loading="eager" path="assets/img/hitchin80/descendants.png" class="limit-height rounded z-depth-1" zoomable=true %}
 
