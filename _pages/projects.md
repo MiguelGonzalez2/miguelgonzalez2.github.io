@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Others
+title: Other
 permalink: /projects/
 description: Here you can find some of my side projects.
 nav: true
