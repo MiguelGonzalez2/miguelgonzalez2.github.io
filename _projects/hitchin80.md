@@ -218,6 +218,6 @@ This was a very fun project, not only because of the satisfaction of seeing it c
 
 <br/>
 
-_Originally posted on: Sep. 25, 2026_
+_Originally posted on: Sep. 25th, 2026_
 
-_Last updated: Sep. 27, 2026_
+_Last updated: Sep. 30th, 2026_
