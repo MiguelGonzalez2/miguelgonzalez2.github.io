@@ -6,7 +6,7 @@ title: Miguel González # the website title (if blank, full name will be used in
 first_name: Miguel
 middle_name:
 last_name: González
-email: miguel.gonzalez@icmat.es
+email: miguel.gonzalez@ista.ac.at
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   This is my personal website.
 footer_text: >
